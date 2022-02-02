@@ -10,8 +10,8 @@ const headersData = [
     { duration: 400, to: "/about", text: 'About' },
     { duration: 500, to: "/services", text: 'Services' },
     { duration: 600, to: "/news", text: 'News' },
-    { delay: 100, duration: 700, to: "/gallery", text: 'Gallery' },
-    { delay: 120, duration: 800, to: "/contacts", text: 'Contacts' },
+    { duration: 700, to: "/gallery", text: 'Gallery' },
+    { duration: 800, to: "/contacts", text: 'Contacts' },
 ]
 
 const Header = () => {
@@ -21,16 +21,27 @@ const Header = () => {
                 <h4 className="header__text__logo mb-0">Fly Khiva</h4>
                 <div className='d-flex align-items-center'>
                     {headersData.length > 0 && headersData?.map((value) => {
-                        return <Slide key={value.to} duration={value.duration} direction='down' delay={value.delay ? value.delay : ''}>
+                        return <div
+                            data-aos-duration={value.duration}
+                            data-aos="fade-down"
+                            key={value.to}
+                        >
                             <Link to={value.to} className='fw-bold me-2 fs-5 mb-0 text-white header__link'>{value.text}</Link>
-                        </Slide >
+                        </div >
                     })}
-                    <Slide direction='down' duration={900}>
+                    <div
+                        data-aos-duration={800}
+                        data-aos="fade-down"
+                    >
                         <div className="language me-5">Eng</div>
-                    </Slide>
-                    <Slide direction='down' duration={1100} delay={10}>
+                    </div>
+                    <div
+                        data-aos="fade-down"
+                        data-aos-duration={800}
+                        data-aos-delay={100}
+                    >
                         <MyButton width="135px" height="43px">Book now</MyButton>
-                    </Slide>
+                    </div>
                 </div>
             </div>
         </Fade>
