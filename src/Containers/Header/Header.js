@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import HeaderWrapper from './HeaderWrapper';
 import MyButton from "../../UI/Button/MyButton"
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 
 const headersData = [
