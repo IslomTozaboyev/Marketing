@@ -63,16 +63,28 @@ const swiperData = [
     { duration: 1500, img: swiper_photo2, title: 'Samarkand_Stambul', price: '15$' },
 ]
 
+// const buy__pricesData = [
+//     { duration: 700, title: `Изменено время авиарейса Ташкент-Бухара- Ташкент` },
+//     { duration: 900, title: `Отпразднуйте Новый год в Риге вместе с Uzbekistan Airways` },
+//     { duration: 1100, title: `Новая программа «Тайный пассажир»` },
+//     { duration: 1300, title: `Авиакомпания Uzbekistan Airways увеличивает частоту полётов в Дели` },
+//     { duration: 1500, title: `Изменено время авиарейса Ташкент-Бухара- Ташкент` },
+//     { duration: 1700, title: `Отпразднуйте  Новый год в Риге вместе с Uzbekistan Airways` },
+//     { duration: 1800, title: `Новая программа «Тайный пассажир»` },
+//     { duration: 1900, title: `Авиакомпания Uzbekistan Airways увеличивает частоту полётов в Дели` },
+// ]
+
 const buy__pricesData = [
-    { duration: 700, title: `Изменено время авиарейса Ташкент-Бухара- Ташкент` },
-    { duration: 900, title: `Отпразднуйте Новый год в Риге вместе с Uzbekistan Airways` },
-    { duration: 1100, title: `Новая программа «Тайный пассажир»` },
-    { duration: 1300, title: `Авиакомпания Uzbekistan Airways увеличивает частоту полётов в Дели` },
-    { duration: 1500, title: `Изменено время авиарейса Ташкент-Бухара- Ташкент` },
-    { duration: 1700, title: `Отпразднуйте  Новый год в Риге вместе с Uzbekistan Airways` },
-    { duration: 1800, title: `Новая программа «Тайный пассажир»` },
-    { duration: 1900, title: `Авиакомпания Uzbekistan Airways увеличивает частоту полётов в Дели` },
+    { duration: 700, title: `On the other hand, we denounce with righteous indignation and dislike men` },
+    { duration: 900, title: `Denounce with righteous indignation and dislike men Uzbekistan Airways` },
+    { duration: 1100, title: `On the other hand, we denounce with righteous indignation and dislike men` },
+    { duration: 1300, title: `On the other hand, we denounce with righteous indignation and dislike men` },
+    { duration: 1500, title: `On the other hand, we denounce with righteous indignation and dislike men` },
+    { duration: 1700, title: `On the other hand, we denounce with righteous indignation and dislike men` },
+    { duration: 1800, title: `On the other hand, we denounce with righteous indignation and dislike men` },
+    { duration: 1900, title: `On the other hand, we denounce with righteous indignation and dislike men` },
 ]
+
 
 const Home = () => {
     const [eye, setEye] = useState(false)
