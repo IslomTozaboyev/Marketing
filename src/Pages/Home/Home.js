@@ -88,7 +88,7 @@ const Home = () => {
                     <div>
                         <div className="row justify-content-center">
                             <div className="col-md-6">
-                                <Slide className="my__opacity" direction={"right"} duration={1500}>
+                                <Slide direction={"right"} duration={1500}>
                                     <Zoom >
                                         <img src={air_home} alt="air" />
                                     </Zoom>
@@ -217,20 +217,22 @@ const Home = () => {
                 </div>
                 <div className="d-flex flex-wrap">
                     {buy__pricesData.length > 0 && buy__pricesData?.map((value, index) => {
-                        return <Slide key={index} direction="up" duration={value.duration}
-                            style={{
-                                backgroundImage: `url(${buy__price__img})`,
-                                backgroundSize: 'cover',
-                                width: "290px",
-                                height: '378px',
-                                marginRight: '80px',
-                                position: "relative"
-                            }}
-                            key={index}
-                            className="col-12 col-md-6 mb-5 prices"
-                        >
-                            <p className="mb-0 buy__prices__title">{value.title}</p>
-                        </Slide>
+                        return <>
+                            <Slide key={index} direction="up" duration={value.duration}
+                                style={{
+                                    backgroundImage: `url(${buy__price__img})`,
+                                    backgroundSize: 'cover',
+                                    width: "290px",
+                                    height: '378px',
+                                    marginRight: '80px',
+                                    position: "relative"
+                                }}
+                                key={index}
+                                className="col-12 col-md-6 mb-5 prices"
+                            >
+                                <p className="mb-0 buy__prices__title">{value.title}</p>
+                            </Slide>
+                        </>
                     })}
                 </div>
             </div>
