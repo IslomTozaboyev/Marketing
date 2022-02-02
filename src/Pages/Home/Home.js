@@ -55,8 +55,8 @@ const servicesData = [
 ]
 
 const swiperData = [
-    { duration: 1000, img: swiper_photo, title: 'Samarkand_Urgench', price: '15$' },
-    { duration: 1100, img: swiper_photo2, title: 'Samarkand_Fergana', price: '15$' },
+    { duration: 1000, img: swiper_photo, title: 'Samarkand_Ur', price: '15$' },
+    { duration: 1100, img: swiper_photo2, title: 'Samarkand_Fer', price: '15$' },
     { duration: 1200, img: swiper_photo3, title: 'Samarkand_Namangan', price: '15$' },
     { duration: 1300, img: swiper_photo4, title: 'Samarkand_Stambul', price: '15$' },
     { duration: 1400, img: swiper_photo, title: 'Samarkand_Stambul', price: '15$' },
