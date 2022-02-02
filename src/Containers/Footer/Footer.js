@@ -3,7 +3,7 @@ import FooterWrapper from './FooterWrapper';
 import footer__icon1 from '../../img/icons/footer__link.png'
 import footer__icon2 from '../../img/icons/footer__link2.png'
 import footer__icon3 from '../../img/icons/footer__link3.png'
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 
 const footer__links = [

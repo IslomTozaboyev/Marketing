@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import HomeWrapper from './HomeWrapper';
 import Header from '../../Containers/Header';
 // photos
