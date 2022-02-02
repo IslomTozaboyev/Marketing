@@ -26,8 +26,8 @@ const Footer = () => {
 
                     <div className="row">
                         {footer__links.length > 0 && footer__links.map((value, index) => {
-                            return <div className="col-12 col-md-4 mb-4 p-0">
-                                <Slide key={index} direction='up' duration={value.duration} >
+                            return <div key={index} className="col-12 col-md-4 mb-4 p-0">
+                                <Slide direction='up' duration={value.duration} >
                                     <a href={value.link} className='me-4 text-white footer__link'>{value.text}</a>
                                 </Slide>
                             </div>
