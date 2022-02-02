@@ -115,8 +115,8 @@ const Home = () => {
                             <Fade direction="up">
                                 <div style={{ marginTop: '56px' }} className="col-md-10 d-flex justify-content-center align-items-center">
                                     <div className="home__box d-flex align-items-center">
-                                        {hemeBoxData.length > 0 && hemeBoxData?.map((value) => {
-                                            return <div key={value.text} className={`box__subtitle ${value.border && 'my_border'} d-flex align-items-center`}>
+                                        {hemeBoxData.length > 0 && hemeBoxData?.map((value, index) => {
+                                            return <div key={index} className={`box__subtitle ${value.border && 'my_border'} d-flex align-items-center`}>
                                                 {value.img ? <img className='mx-2' src={value.img} alt="location_icon" /> : ''}
                                                 <input type={value.type} placeholder={value.text} className={`mb-0 box__desc ${value.date ? 'w-100 mx-2 date__input' : ''}`} />
                                             </div>
@@ -228,7 +228,7 @@ const Home = () => {
                 </div>
                 <div className="d-flex flex-wrap">
                     {buy__pricesData.length > 0 && buy__pricesData?.map((value, index) => {
-                        return <Slide direction="up" duration={value.duration}
+                        return <Slide key={index} direction="up" duration={value.duration}
                             style={{
                                 backgroundImage: `url(${buy__price__img})`,
                                 backgroundSize: 'cover',

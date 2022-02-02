@@ -21,8 +21,8 @@ const Header = () => {
                 <h4 className="header__text__logo mb-0">Fly Khiva</h4>
                 <div className='d-flex align-items-center'>
                     {headersData.length > 0 && headersData?.map((value) => {
-                        return <Slide duration={value.duration} direction='down' delay={value.delay ? value.delay : ''}>
-                            <Link to={value.to} key={value.to} className='fw-bold me-2 fs-5 mb-0 text-white header__link'>{value.text}</Link>
+                        return <Slide key={value.to} duration={value.duration} direction='down' delay={value.delay ? value.delay : ''}>
+                            <Link to={value.to} className='fw-bold me-2 fs-5 mb-0 text-white header__link'>{value.text}</Link>
                         </Slide >
                     })}
                     <Slide direction='down' duration={900}>
