@@ -37,7 +37,7 @@ const Footer = () => {
                         <Slide direction='up' duration={1000}>
                             <div style={{ marginRight: '90px' }} className='d-flex align-items-center'>
                                 <img src={footer__icon1} alt="footer__icon" />
-                                <p className="mb-1 footer__text"> Урда ж/м, Шайхантахурский район, Ташкент</p>
+                                <p className="mb-1 footer__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </Slide >
                         <div className='d-flex align-items-center mt-3'>
