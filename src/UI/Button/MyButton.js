@@ -10,6 +10,15 @@ const MyButtonWrapper = styled.div`
         font-weight: 600;
         font-size: 18px;
         line-height: 25px;  
+        box-shadow: inset 0 0 0 0 #fff;
+        transition: ease-out 0.4s;
+        outline: none;
+
+        &:hover{
+            box-shadow: inset 350px 0 0 0 #fff;
+            color: #FFB300;
+            width: 200px;
+        }
     }
 `;
 

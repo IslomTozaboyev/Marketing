@@ -12,11 +12,19 @@ const FooterWrapper = styled.div`
         .footer__title{
             margin-right: 120px;
         }
+        .footer__link{
+            transition: .5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
         .footer__text{
             font-weight: 600;
             font-size: 18px;
             line-height: 25px;
             color: #FFFFFF;
+
+           
         }
     }
 `;

@@ -320,6 +320,12 @@ const HomeWrapper = styled.div`
                 width: 46px;
                 height: 46px;
                 cursor: pointer;
+                transition: .5s;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transform: translateY(-10px);
+                }
             }
         }
     }
