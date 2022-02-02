@@ -13,6 +13,7 @@ const MyButtonWrapper = styled.div`
         box-shadow: inset 0 0 0 0 #fff;
         transition: ease-out 0.4s;
         outline: none;
+        transition: 1s;
 
         &:hover{
             box-shadow: inset 350px 0 0 0 #fff;
