@@ -207,7 +207,7 @@ const Home = () => {
 
             {/* buy__prices */}
             <div className="buy__prices padding__my">
-                <div className="">
+                <div>
                     <Slide direction="up" duration={1000}>
                         <p className="mb-0 section__title">Buy at competitive prices</p>
                     </Slide>
@@ -217,8 +217,8 @@ const Home = () => {
                 </div>
                 <div className="d-flex flex-wrap">
                     {buy__pricesData.length > 0 && buy__pricesData?.map((value, index) => {
-                        return <>
-                            <Slide key={index} direction="up" duration={value.duration}
+                        return <div key={index} >
+                            <Slide direction="up" duration={value.duration}
                                 style={{
                                     backgroundImage: `url(${buy__price__img})`,
                                     backgroundSize: 'cover',
@@ -232,7 +232,7 @@ const Home = () => {
                             >
                                 <p className="mb-0 buy__prices__title">{value.title}</p>
                             </Slide>
-                        </>
+                        </div>
                     })}
                 </div>
             </div>

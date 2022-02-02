@@ -26,11 +26,11 @@ const Footer = () => {
 
                     <div className="row">
                         {footer__links.length > 0 && footer__links.map((value, index) => {
-                            return <>
-                                <Slide key={index} direction='up' duration={value.duration} className="col-12 col-md-4 mb-4 p-0 ">
+                            return <div className="col-12 col-md-4 mb-4 p-0 " key={index}>
+                                <Slide direction='up' duration={value.duration} >
                                     <a className="footer__link" href={value.link} className='me-4 text-white'>{value.text}</a>
                                 </Slide>
-                            </>
+                            </div>
                         })}
                     </div>
                 </div>
