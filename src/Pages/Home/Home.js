@@ -21,7 +21,7 @@ import buy__price__img from "../../img/buy__prices__air.png";
 import gallery from "../../img/gallery1.png";
 import gallery2 from "../../img/gallery2png.png";
 import gallery3 from "../../img/gallery3.png";
-import gallery4 from "../../img/gallery4.png";
+import gallery4 from "../../img/gallery4-light.png";
 import contact__img1 from "../../img/contact1.png";
 import contact__img2 from "../../img/contact2.png";
 import login__img from "../../img/contact_login.png";
