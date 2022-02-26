@@ -20,7 +20,7 @@ const Footer = () => {
     <FooterWrapper>
       <footer className="footer">
         <div className="row">
-          <div className="col-12 col-md-6 d-flex">
+          <div className="col-12 col-md-12 col-lg-6 d-flex">
             <Slide direction="up" duration={1000}>
               <img
                 className="flykhiva__logo"
@@ -33,7 +33,10 @@ const Footer = () => {
               {footer__links.length > 0 &&
                 footer__links.map((value, index) => {
                   return (
-                    <div key={index} className="col-12 col-md-4 mb-4 p-0">
+                    <div
+                      key={index}
+                      className="col-12 col-sm-6 col-md-4 mb-4 p-0"
+                    >
                       <Slide direction="up" duration={value.duration}>
                         <a
                           href={value.link}
@@ -47,8 +50,8 @@ const Footer = () => {
                 })}
             </div>
           </div>
-          <div className="col-12 col-md-6">
-            <div className="d-flex flex-column align-items-center">
+          <div className="col-12 col-md-12 col-lg-6 down__texts">
+            <div className="d-flex flex-column align-items-lg-center">
               <Slide direction="up" duration={1000}>
                 <div
                   style={{ marginRight: "90px" }}
@@ -56,7 +59,6 @@ const Footer = () => {
                 >
                   <img src={footer__icon1} alt="footer__icon" />
                   <p className="mb-1 footer__text">
-                    {" "}
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   </p>
                 </div>

@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const FooterWrapper = styled.div`
   .footer {
-    height: 213px;
+    height: 100%;
     left: 0px;
     background: #7d352f;
     color: #ffffff;
     margin-top: 100px;
-    padding: 65px 0 0 187px;
+    padding: 65px 0 65px 187px;
 
     .flykhiva__logo {
       width: 119px;
@@ -42,6 +42,15 @@ const FooterWrapper = styled.div`
     }
     .flykhiva__logo {
       margin-right: 60px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .footer {
+      padding: 65px 0 0 50px !important;
+    }
+    .down__texts {
+      margin-top: 50px;
     }
   }
 `;

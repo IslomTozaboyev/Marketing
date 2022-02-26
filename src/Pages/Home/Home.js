@@ -264,7 +264,7 @@ const Home = () => {
                 </Fade>
                 <Fade direction="up" duration={1000}>
                   <p
-                    style={{ width: "650px" }}
+                    // style={{ width: "650px" }}
                     className="services__subtitle pe-5 text-start"
                   >
                     On the other hand, we denounce with righteous indignation
@@ -287,7 +287,7 @@ const Home = () => {
                         return (
                           <Fade
                             key={index}
-                            className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-5"
+                            className="col-12 col-sm-16 col-md-12 col-lg-12 col-xl-12 col-xxl-6 mb-5"
                             direction="up"
                             duration={value.duration}
                           >
@@ -353,9 +353,13 @@ const Home = () => {
                 modules={[FreeMode, Pagination]}
                 breakpoints={{
                   // when window width is >= 640px
+                  320: {
+                    width: 320,
+                    slidesPerView: 1,
+                  },
                   640: {
                     width: 640,
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                   },
                   768: {
                     width: 768,
@@ -384,16 +388,11 @@ const Home = () => {
                           data-aos="fade-up"
                           className="w-100 mySwiper__card"
                         >
-                          <div
-                            style={{ overflow: "hidden", borderRadius: "10px" }}
-                            className="w-100"
-                          >
-                            <img
-                              className="swiper__photo"
-                              src={value.img}
-                              alt={value.title}
-                            />
-                          </div>
+                          <img
+                            className="swiper__photo"
+                            src={value.img}
+                            alt={value.title}
+                          />
                           <Slide direction="up" duration={value.duration}>
                             <p className="mb-0 swiper__title mt-3">
                               {value.title}

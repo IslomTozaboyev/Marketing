@@ -152,6 +152,7 @@ const HomeWrapper = styled.div`
   /* swiper__section */
   .swiper__section {
     position: relative;
+    overflow: hidden;
 
     .swiper__photo {
       transition: 0.5s;
@@ -444,9 +445,9 @@ const HomeWrapper = styled.div`
   }
 
   @media screen and (max-width: 1300px) {
-    .home {
+    /* .home {
       height: 90vh;
-    }
+    } */
     .home__title {
       font-size: 48px !important;
       line-height: 150% !important;
@@ -469,9 +470,11 @@ const HomeWrapper = styled.div`
       }
     }
     .ps__box {
-      transform: translateX(8%) !important;
+      transform: translateX(4%) !important;
       width: 900px !important;
       height: 350px !important;
+      padding: 0 75px !important;
+
       .ps__box__title {
         font-size: 48px !important;
       }
@@ -508,9 +511,6 @@ const HomeWrapper = styled.div`
     }
   }
   @media screen and (max-width: 1100px) {
-    .home {
-      height: 85vh;
-    }
     .home__title {
       font-size: 42px !important;
       line-height: 140% !important;
@@ -519,7 +519,6 @@ const HomeWrapper = styled.div`
     }
     .home__air {
       width: 700px;
-      /* height: 383px; */
     }
     .padding__my {
       padding: 150px 0px 0 50px;
@@ -537,6 +536,8 @@ const HomeWrapper = styled.div`
       transform: translateX(12%) !important;
       width: 800px !important;
       height: 340px !important;
+      padding: 0 70px !important;
+
       .ps__box__title {
         font-size: 46px !important;
       }
@@ -558,9 +559,6 @@ const HomeWrapper = styled.div`
     }
   }
   @media screen and (max-width: 1000px) {
-    .home {
-      height: 85vh;
-    }
     .home__title {
       font-size: 42px !important;
       position: relative;
@@ -590,6 +588,8 @@ const HomeWrapper = styled.div`
       transform: translateX(5%) !important;
       width: 750px !important;
       height: 330px !important;
+      padding: 0 65px !important;
+
       .ps__box__title {
         font-size: 45px !important;
       }
@@ -612,6 +612,7 @@ const HomeWrapper = styled.div`
       position: relative;
       top: -40px;
       left: -390px !important;
+      font-size: 40px !important;
     }
     .home__air {
       width: 700px;
@@ -639,11 +640,179 @@ const HomeWrapper = styled.div`
       transform: translateX(0%) !important;
       width: 700px !important;
       height: 330px !important;
+      padding: 0 60px !important;
+
       .ps__box__title {
         font-size: 44px !important;
       }
       .ps__box__subtitle {
         font-size: 14px;
+      }
+    }
+    .services__photo {
+      position: relative;
+      top: 350px;
+      left: -80px;
+      width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .ps__box {
+      transform: translateX(-4%) !important;
+      width: 700px !important;
+      height: 320px !important;
+      padding: 0 55px !important;
+
+      .ps__box__title {
+        font-size: 44px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 14px;
+      }
+    }
+    .services__photo {
+      position: relative;
+      top: 350px;
+      left: -80px;
+      width: 350px;
+    }
+    .services__section.padding__my {
+      padding: 150px 0px 0 20px !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .home__title {
+      position: relative;
+      top: -240px;
+      left: 10px !important;
+      font-size: 38px !important;
+    }
+    .home__air {
+      width: 550px;
+      position: relative;
+      top: 120px;
+    }
+    .padding__my {
+      padding: 150px 0px 0 80px;
+    }
+    .home__big__box {
+      width: 600px;
+      margin-top: 100px !important;
+      .home__box {
+        height: 60px !important;
+      }
+      .box__desc {
+        font-size: 15px !important;
+      }
+      .button {
+        width: 110px !important;
+        height: 60px !important;
+      }
+      .six,
+      .five,
+      .four {
+        display: none !important;
+      }
+    }
+
+    .ps__box {
+      transform: translateX(0%) !important;
+      width: 600px !important;
+      height: 300px !important;
+      padding: 0 50px !important;
+
+      .ps__box__title {
+        font-size: 38px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 14px !important;
+      }
+    }
+    .services__photo {
+      display: none;
+    }
+    .services__section.padding__my {
+      padding: 150px 0px 0 20px !important;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .home__big__box {
+      width: 500px;
+      margin-top: 100px !important;
+      .six,
+      .five,
+      .four,
+      .three {
+        display: none !important;
+      }
+    }
+
+    .ps__box {
+      transform: translateX(-5%) !important;
+      width: 600px !important;
+      height: 300px !important;
+      padding: 0 48px !important;
+
+      .ps__box__title {
+        font-size: 38px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .ps__box {
+      transform: translateX(-9%) !important;
+      width: 550px !important;
+      height: 300px !important;
+      padding: 0 45px !important;
+
+      .ps__box__title {
+        font-size: 32px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .home__title {
+      position: relative;
+      top: -240px;
+      left: 10px !important;
+      font-size: 36px !important;
+    }
+    .home__air {
+      width: 450px;
+      position: relative;
+      top: 80px;
+    }
+    .home__big__box {
+      width: 450px;
+      margin-top: 100px !important;
+      .six,
+      .five,
+      .four,
+      .three {
+        display: none !important;
+      }
+    }
+    .ps__box {
+      transform: translateX(-11%) !important;
+      width: 550px !important;
+      height: 300px !important;
+      padding: 0 40px !important;
+      .ps__box__title {
+        font-size: 32px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 14px !important;
       }
     }
   }

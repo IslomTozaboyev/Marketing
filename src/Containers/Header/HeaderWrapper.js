@@ -53,13 +53,14 @@ const HeaderWrapper = styled.div`
       height: 100vh;
       position: absolute;
       top: 0;
-      left: -30%;
+      left: -100%;
       background-color: #d2c7f5;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       transition: 0.8s;
+      overflow: hidden;
       z-index: 1001 !important;
 
       &.active {
@@ -119,6 +120,11 @@ const HeaderWrapper = styled.div`
     }
     .bars {
       display: block !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .language {
+      display: none !important;
     }
   }
 `;
