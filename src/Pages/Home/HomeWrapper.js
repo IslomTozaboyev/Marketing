@@ -564,7 +564,8 @@ const HomeWrapper = styled.div`
       position: relative;
       top: -40px;
       left: -450px !important;
-      width: 700px;
+      white-space: nowrap !important;
+      width: 100%;
     }
     .home__air {
       width: 800px;

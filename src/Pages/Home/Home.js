@@ -180,11 +180,14 @@ const Home = () => {
                   </Slide>
                 </div>
                 <div className="col-md-6">
-                  <Slide direction={"up"} cascade={false}>
+                  <h4 className="home__title">
+                    OUR PLANES, <br /> YOUR DESTINATIONS
+                  </h4>
+                  {/* <Slide direction={"up"} cascade={false}>
                     <h4 className="home__title">
                       OUR PLANES, YOUR DESTINATIONS
                     </h4>
-                  </Slide>
+                  </Slide> */}
                 </div>
                 <Fade direction="up">
                   <div
@@ -197,11 +200,9 @@ const Home = () => {
                           return (
                             <div
                               key={index}
-                              className={`box__subtitle ${
-                                value.class && value.class
-                              } ${
-                                value.border && "my_border"
-                              } d-flex align-items-center`}
+                              className={`box__subtitle ${value.class && value.class
+                                } ${value.border && "my_border"
+                                } d-flex align-items-center`}
                             >
                               {value.img ? (
                                 <img
@@ -215,9 +216,8 @@ const Home = () => {
                               <input
                                 type={value.type}
                                 placeholder={value.text}
-                                className={`mb-0 box__desc ${
-                                  value.date ? "w-100 mx-2 date__input" : ""
-                                }`}
+                                className={`mb-0 box__desc ${value.date ? "w-100 mx-2 date__input" : ""
+                                  }`}
                               />
                             </div>
                           );
@@ -344,7 +344,7 @@ const Home = () => {
             </Slide>
           </div>
           <div className="row justify-content-center my_swiper">
-            <div className="col-12 p-0">
+            <div className="col-12 overflow-hidden">
               <Swiper
                 slidesPerView={5}
                 spaceBetween={50}
