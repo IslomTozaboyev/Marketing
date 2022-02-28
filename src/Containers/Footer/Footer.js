@@ -21,7 +21,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="row">
           <div className="col-12 col-md-12 col-lg-6 d-flex">
-            <Slide direction="up" duration={1000}>
+            <Slide className="logo__box" direction="up" duration={1000}>
               <img
                 className="flykhiva__logo"
                 src={flykhiva__logo}
@@ -35,7 +35,7 @@ const Footer = () => {
                   return (
                     <div
                       key={index}
-                      className="col-12 col-sm-6 col-md-4 mb-4 p-0"
+                      className="col-6 col-sm-6 col-md-4 mb-4 p-0"
                     >
                       <Slide direction="up" duration={value.duration}>
                         <a
@@ -64,7 +64,7 @@ const Footer = () => {
                 </div>
               </Slide>
               <div className="d-flex align-items-center mt-3">
-                <Slide direction="up" duration={1000}>
+                <Slide className="number" direction="up" duration={1000}>
                   <div className="mb-0 d-flex align-items-center">
                     <img src={footer__icon2} alt="footer__icon" />
                     <p className="mb-0 footer__text ms-2 me-5">
@@ -80,6 +80,14 @@ const Footer = () => {
                     </p>
                   </div>
                 </Slide>
+              </div>
+              <div>
+                <div className="mb-0 mt-4 ms-1 d-flex align-items-center">
+                  <img src={footer__icon2} alt="footer__icon" />
+                  <p className="number__mobile footer__text mb-0 ms-2 me-5">
+                    +998 90 000 00 00
+                  </p>
+                </div>
               </div>
             </div>
           </div>

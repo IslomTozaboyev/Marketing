@@ -7,12 +7,12 @@ import flykhiva__logo from "../../img/flykhiva__logo.svg";
 import { useState } from "react";
 
 const headersData = [
-  { duration: 300, to: "/", text: "Home" },
-  { duration: 400, to: "/about", text: "About" },
-  { duration: 500, to: "/services", text: "Services" },
-  { duration: 600, to: "/news", text: "News" },
-  { duration: 700, to: "/gallery", text: "Gallery" },
-  { duration: 800, to: "/contacts", text: "Contacts" },
+  { class: "one", duration: 300, to: "/", text: "Home" },
+  { class: "two", duration: 400, to: "/about", text: "About" },
+  { class: "three", duration: 500, to: "/services", text: "Services" },
+  { class: "four", duration: 600, to: "/news", text: "News" },
+  { class: "five", duration: 700, to: "/gallery", text: "Gallery" },
+  { class: "six", duration: 800, to: "/contacts", text: "Contacts" },
 ];
 
 const Header = () => {
@@ -36,7 +36,7 @@ const Header = () => {
                     key={value.to}
                   >
                     <Link
-                      to={value.to}
+                      to="#"
                       className="fw-bold me-2 fs-5 mb-0 text-white header__link"
                     >
                       {value.text}
@@ -51,13 +51,14 @@ const Header = () => {
               data-aos="fade-down"
               data-aos-duration={800}
               data-aos-delay={100}
+              className="header__button"
             >
               <MyButton width="135px" height="43px">
                 Book now
               </MyButton>
             </div>
             <b onClick={() => setBars(!bars)} className="fs-4 ms-4 bars">
-              {bars ? "close" : "open"}
+              open
             </b>
           </div>
 
@@ -78,15 +79,20 @@ const Header = () => {
                     key={value.to}
                   >
                     <Link
-                      to={value.to}
-                      className="fw-bold me-2 fs-5 mb-0 mediaLeft__content__link"
+                      to="#"
+                      className={`fw-bold me-2 fs-5 mb-0 mediaLeft__content__link ${
+                        value.class && value.class
+                      }`}
                     >
                       {value.text}
                     </Link>
                   </div>
                 );
               })}
-            {/* <b className="fs-1 ms-4 times">&times;</b> */}
+
+            <div onClick={() => setBars(!bars)} className="close">
+              X
+            </div>
           </div>
         </div>
       </Fade>

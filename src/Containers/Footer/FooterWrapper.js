@@ -47,10 +47,21 @@ const FooterWrapper = styled.div`
 
   @media screen and (max-width: 900px) {
     .footer {
-      padding: 65px 0 0 50px !important;
+      padding: 50px !important;
     }
     .down__texts {
       margin-top: 50px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .number {
+      display: none;
+    }
+    .logo__box {
+      width: 50% !important;
+    }
+    .flykhiva__logo {
+      width: 100px !important;
     }
   }
 `;

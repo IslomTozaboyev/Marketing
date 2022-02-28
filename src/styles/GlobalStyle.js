@@ -2,12 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Nunito+Sans:wght@400;600;800;900&family=Poppins:wght@400;600&family=RocknRoll+One&family=Varela+Round&display=swap');
-
-    body, html {
-        width: 100%;
-        height: 100%;
-    }
-
     body{
         margin: 0;
         padding: 0;
@@ -15,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *{
-        box-sizing: border-box;
+        box-sizing: border-box !important;
         font-family: 'Nunito Sans', sans-serif !important;
     }
 

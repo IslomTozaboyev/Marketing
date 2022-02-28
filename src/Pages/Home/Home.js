@@ -171,7 +171,7 @@ const Home = () => {
           {/* home__info */}
           <div className="padding__my">
             <div>
-              <div className="row justify-content-center">
+              <div className="row justify-content-center w-100">
                 <div className="col-md-6">
                   <Slide direction={"right"} duration={2000}>
                     <Zoom>
@@ -200,9 +200,11 @@ const Home = () => {
                           return (
                             <div
                               key={index}
-                              className={`box__subtitle ${value.class && value.class
-                                } ${value.border && "my_border"
-                                } d-flex align-items-center`}
+                              className={`box__subtitle ${
+                                value.class && value.class
+                              } ${
+                                value.border && "my_border"
+                              } d-flex align-items-center`}
                             >
                               {value.img ? (
                                 <img
@@ -216,8 +218,9 @@ const Home = () => {
                               <input
                                 type={value.type}
                                 placeholder={value.text}
-                                className={`mb-0 box__desc ${value.date ? "w-100 mx-2 date__input" : ""
-                                  }`}
+                                className={`mb-0 box__desc ${
+                                  value.date ? "w-100 mx-2 date__input" : ""
+                                }`}
                               />
                             </div>
                           );
@@ -256,7 +259,7 @@ const Home = () => {
 
         {/* services */}
         <div className="services__section padding__my">
-          <div className="row ">
+          <div className="row w-100">
             <div className="col-12 col-md-7 px-5">
               <div className="services__text">
                 <Fade direction="up" duration={1000}>
@@ -281,7 +284,7 @@ const Home = () => {
 
               <div className="services__boxes">
                 <div className="services__box">
-                  <div className="row">
+                  <div className="row w-100">
                     {servicesData.length > 0 &&
                       servicesData.map((value, index) => {
                         return (
@@ -343,7 +346,7 @@ const Home = () => {
               </p>
             </Slide>
           </div>
-          <div className="row justify-content-center my_swiper">
+          <div className="row justify-content-center my_swiper w-100">
             <div className="col-12 overflow-hidden">
               <Swiper
                 slidesPerView={5}
@@ -489,7 +492,7 @@ const Home = () => {
           <Fade direction="up" duration={1000}>
             <p className="mb-0 section__title">Contact us</p>
           </Fade>
-          <div className="row">
+          <div className="row w-100">
             <div className="col-12 col-md-12 col-lg-12 col-xl-7 position-relative login__photos">
               <img
                 className="contact__img1"
