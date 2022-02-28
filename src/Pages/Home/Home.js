@@ -474,7 +474,7 @@ const Home = () => {
           <Fade direction="up" duration={1000}>
             <p className="mb-0 section__title">Contact us</p>
           </Fade>
-          <div className="row w-100">
+          <div className="row w-100 m-0">
             <div className="col-12 col-md-12 col-lg-12 col-xl-7 position-relative login__photos">
               <img
                 className="contact__img1"

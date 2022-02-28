@@ -64,5 +64,19 @@ const FooterWrapper = styled.div`
       width: 100px !important;
     }
   }
+  @media screen and (max-width: 500px) {
+    .logo__box {
+      width: 60% !important;
+    }
+    .flykhiva__logo {
+      width: 100px !important;
+    }
+    .footer__link {
+      font-size: 13px;
+    }
+    .footer__text {
+      font-size: 14px !important;
+    }
+  }
 `;
 export default FooterWrapper;

@@ -1072,5 +1072,78 @@ const HomeWrapper = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 320px) {
+    .padding__my {
+      padding: 150px 0px 0 10px !important;
+    }
+    .home__title {
+      position: relative;
+      top: -220px;
+      left: 20px !important;
+      font-size: 22px !important;
+    }
+    .home__air {
+      width: 280px;
+      position: relative;
+      top: 0px;
+      left: 10px;
+    }
+    .home__big__box {
+      width: 300px;
+      margin-top: 100px !important;
+      padding: 0;
+      margin: 0;
+
+      .home__box {
+        height: 40px !important;
+      }
+      .box__desc {
+        font-size: 14px !important;
+      }
+      .button {
+        width: 70px !important;
+        height: 40px !important;
+        font-size: 14px;
+        margin-left: 7px !important;
+      }
+      .six,
+      .five,
+      .four,
+      .three {
+        display: none !important;
+      }
+    }
+    .ps__box {
+      transform: translateX(-1%) !important;
+      width: 300px !important;
+      height: 420px !important;
+      padding: 0 20px !important;
+      .ps__box__title {
+        font-size: 30px !important;
+        line-height: 120% !important;
+        margin-bottom: 20px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 12px !important;
+      }
+    }
+    .login__btn,
+    .my__input {
+      width: 250px !important;
+      height: 40px !important;
+    }
+    .login {
+      width: 300px !important;
+      height: 600px !important;
+      background-position: 50%, 100% !important;
+
+      .eye {
+        position: absolute;
+        top: 44%;
+        right: 15%;
+      }
+    }
+  }
 `;
 export default HomeWrapper;
