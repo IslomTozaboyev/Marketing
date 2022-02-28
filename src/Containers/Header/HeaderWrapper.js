@@ -173,6 +173,7 @@ const HeaderWrapper = styled.div`
   @media screen and (max-width: 500px) {
     .mediaLeft__content {
       padding: 0 5px !important;
+      height: 12vh !important;
     }
     .five {
       display: none;
@@ -187,7 +188,7 @@ const HeaderWrapper = styled.div`
       height: 35px !important;
     }
     .mediaLeft__content__link {
-      font-size: 17px !important;
+      font-size: 16px !important;
     }
     .four {
       display: none;

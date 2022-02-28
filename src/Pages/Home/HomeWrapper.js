@@ -1149,6 +1149,9 @@ const HomeWrapper = styled.div`
         right: 15%;
       }
     }
+    .contact__section .row {
+      width: 95% !important;
+    }
   }
 
   @media screen and (max-width: 320px) {
