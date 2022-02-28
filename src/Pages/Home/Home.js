@@ -260,16 +260,13 @@ const Home = () => {
         {/* services */}
         <div className="services__section padding__my">
           <div className="row w-100">
-            <div className="col-12 col-md-7 px-5">
+            <div className="col-12 col-md-7">
               <div className="services__text">
                 <Fade direction="up" duration={1000}>
                   <h4 className="mb-0 services__title mb-3">Services</h4>
                 </Fade>
                 <Fade direction="up" duration={1000}>
-                  <p
-                    // style={{ width: "650px" }}
-                    className="services__subtitle pe-5 text-start"
-                  >
+                  <p className="services__subtitle pe-5 text-start">
                     On the other hand, we denounce with righteous indignation
                     and dislike men who are so beguiled and demoralized by the
                     charms of pleasure of the moment, so blinded by desire, that
@@ -305,10 +302,7 @@ const Home = () => {
                                   {value.title}
                                 </h4>
                               </div>
-                              <p
-                                style={{ width: "350px" }}
-                                className="mb-0 services__box__subtitle mt-3 "
-                              >
+                              <p className="mb-0 services__box__subtitle mt-3 ">
                                 {value.subtitle}
                               </p>
                             </div>
@@ -428,36 +422,24 @@ const Home = () => {
               </p>
             </Slide>
           </div>
-          <div className="d-flex flex-wrap">
+          <div className="row w-100">
             {buy__pricesData.length > 0 &&
               buy__pricesData?.map((value, index) => {
                 return (
-                  <div className="buy__boxes" key={index}>
+                  <div
+                    data-aos-duration={value.duration}
+                    data-aos="fade-up"
+                    direction="up"
+                    duration={value.duration}
+                    key={index}
+                    className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 big__prices"
+                  >
                     <div
-                      data-aos-duration={value.duration}
-                      data-aos="fade-up"
-                      direction="up"
-                      duration={value.duration}
+                      className="prices"
                       style={{
-                        width: "290px",
-                        height: "378px",
-                        marginRight: "80px",
-                        position: "relative",
-                        overflow: "hidden",
-                        borderRadius: "10px",
+                        backgroundImage: `url(${buy__price__img})`,
                       }}
-                      key={index}
-                      className="col-12 col-md-6 mb-5"
                     >
-                      <div
-                        className="prices"
-                        style={{
-                          backgroundImage: `url(${buy__price__img})`,
-                          backgroundSize: "cover",
-                          width: "290px",
-                          height: "378px",
-                        }}
-                      ></div>
                       <p className="mb-0 buy__prices__title">{value.title}</p>
                     </div>
                   </div>
@@ -473,16 +455,16 @@ const Home = () => {
           </Slide>
           <div className="images">
             <div data-aos-duration="3000" data-aos="fade-up">
-              <img className=" gallery gallery1" src={gallery} alt="images" />
+              <img className="gallery gallery1" src={gallery} alt="images" />
             </div>
             <div data-aos-duration="3000" data-aos="fade-up">
-              <img className=" gallery gallery2" src={gallery2} alt="images" />
+              <img className="gallery gallery2" src={gallery2} alt="images" />
             </div>
             <div data-aos-duration="3000" data-aos="fade-up">
-              <img className=" gallery gallery4" src={gallery4} alt="images" />
+              <img className="gallery gallery4" src={gallery4} alt="images" />
             </div>
             <div data-aos-duration="3000" data-aos="fade-up">
-              <img className=" gallery gallery3" src={gallery3} alt="images" />
+              <img className="gallery gallery3" src={gallery3} alt="images" />
             </div>
           </div>
         </div>
@@ -520,12 +502,13 @@ const Home = () => {
             >
               <p className="mb-0 login__title text-center">Log in</p>
 
-              <div className="d-flex flex-column login__form">
+              <div className="d-flex justify-content-center flex-column login__form mx-auto">
                 <label className="label mt-4 mb-2" htmlFor="first__name">
                   Email Address
                 </label>
                 <input
                   className="my__input"
+                  s
                   placeholder="Email"
                   type="email"
                   required
@@ -551,13 +534,7 @@ const Home = () => {
                   alt="eye"
                 />
 
-                <MyButton
-                  width={"322.13px"}
-                  height={"41.66px"}
-                  className="mt-4"
-                >
-                  Log in
-                </MyButton>
+                <MyButton className="mt-4 login__btn">Log in</MyButton>
               </div>
 
               <small className="text-center mt-4">Reset Password?</small>

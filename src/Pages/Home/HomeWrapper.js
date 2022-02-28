@@ -182,32 +182,32 @@ const HomeWrapper = styled.div`
 
   /* buy__price__data */
   .buy__prices {
-    .buy__boxes {
+    .big__prices {
       overflow: hidden;
-      &:hover .buy__prices__title {
-        position: absolute;
-        bottom: 15px;
-      }
-    }
-    .prices {
-      transition: 0.5s;
-      &::before {
-        content: "";
-        transition: 1s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    }
 
-    .prices:hover {
-      cursor: pointer;
-      transform: scale(1.08);
-      &::before {
-        /* background: linear-gradient(180deg, rgba(22, 22, 22, 0) 0%, #161616 100%); */
-        box-shadow: inset 0 -50px 150px 0px #000;
+      .prices {
+        transition: 0.5s;
+        width: 290px;
+        height: 378px;
+        position: relative;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.08);
+
+          .buy__prices__title {
+            position: absolute;
+            bottom: 15px;
+          }
+
+          &::before {
+            background: linear-gradient(
+              180deg,
+              rgba(22, 22, 22, 0) 0%,
+              #161616 100%
+            );
+          }
+        }
       }
     }
 
@@ -240,8 +240,8 @@ const HomeWrapper = styled.div`
         height: 100%;
         transition: 0.5s;
         object-fit: cover;
-
         filter: grayscale();
+
         &:hover {
           filter: none;
           transform: scale(1.1);
@@ -279,8 +279,8 @@ const HomeWrapper = styled.div`
 
     .eye {
       position: absolute;
-      right: 22%;
-      top: 42%;
+      right: 20%;
+      top: 41%;
       cursor: pointer;
     }
 
@@ -288,12 +288,9 @@ const HomeWrapper = styled.div`
       width: 517px;
       height: 647px;
       position: relative;
-      /* position: absolute;
-      right: 230px;
-      padding: 0 100px; */
-      .login__form {
-        margin-left: 80px;
-      }
+      overflow: hidden;
+      background-position: 100%, 100%;
+
       .login__title {
         font-weight: bold;
         font-size: 30.3981px;
@@ -306,9 +303,8 @@ const HomeWrapper = styled.div`
         border-radius: 8px;
         border: none;
         outline: none;
-        width: 322px;
-        height: 46px;
         padding: 0 10px;
+
         &::placeholder {
           font-style: normal;
           font-weight: 450;
@@ -318,6 +314,12 @@ const HomeWrapper = styled.div`
           opacity: 0.6;
         }
       }
+      .login__btn,
+      .my__input {
+        width: 350px;
+        height: 40px;
+      }
+
       .label {
         font-weight: 500;
         font-size: 13.8963px;
@@ -848,19 +850,6 @@ const HomeWrapper = styled.div`
     .big__gallery {
       height: 350px;
     }
-    .login {
-      margin: 0 !important;
-      width: 400px !important;
-      height: 650px !important;
-      .login__form {
-        margin-left: 40px !important;
-      }
-    }
-    .eye {
-      position: absolute;
-      right: 10% !important;
-      top: 42% !important;
-    }
   }
 
   @media screen and (max-width: 500px) {
@@ -899,6 +888,16 @@ const HomeWrapper = styled.div`
     }
     .my_swiper {
       padding-left: 40px !important;
+    }
+    .login {
+      height: 600px !important;
+      background-position: 50%, 100% !important;
+
+      .eye {
+        position: absolute;
+        top: 44%;
+        right: 15%;
+      }
     }
   }
 
@@ -948,6 +947,12 @@ const HomeWrapper = styled.div`
         font-size: 12px !important;
       }
     }
+    .big__gallery {
+      padding: 0 20px !important;
+      .images {
+        gap: 10px !important;
+      }
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -986,6 +991,75 @@ const HomeWrapper = styled.div`
     .ps__box {
       transform: translateX(0%) !important;
       width: 360px !important;
+      height: 400px !important;
+      padding: 0 20px !important;
+      .ps__box__title {
+        font-size: 30px !important;
+        line-height: 120% !important;
+        margin-bottom: 20px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 12px !important;
+      }
+    }
+    .my_swiper {
+      padding-left: 20px !important;
+    }
+    .big__gallery {
+      height: 350px;
+      padding: 0 20px !important;
+    }
+    .login__btn,
+    .my__input {
+      width: 250px !important;
+      height: 40px !important;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .padding__my {
+      padding: 150px 0px 0 20px !important;
+    }
+    .home__title {
+      position: relative;
+      top: -200px;
+      left: 25px !important;
+      font-size: 24px !important;
+    }
+    .home__air {
+      width: 300px;
+      position: relative;
+      top: 20px;
+      left: 10px;
+    }
+    .home__big__box {
+      width: 320px;
+      margin-top: 100px !important;
+      .home__box {
+        height: 45px !important;
+      }
+      .box__desc {
+        font-size: 14px !important;
+      }
+      .button {
+        width: 80px !important;
+        height: 45px !important;
+        font-size: 14px;
+        margin-left: 7px !important;
+      }
+      .six,
+      .five,
+      .four,
+      .three {
+        display: none !important;
+      }
+    }
+    .services__subtitle {
+      padding: 0 !important;
+    }
+    .ps__box {
+      transform: translateX(-1%) !important;
+      width: 320px !important;
       height: 400px !important;
       padding: 0 20px !important;
       .ps__box__title {
