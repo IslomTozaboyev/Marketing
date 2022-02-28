@@ -27,6 +27,9 @@ const FooterWrapper = styled.div`
       line-height: 25px;
       color: #ffffff;
     }
+    .number__mobile {
+      display: none;
+    }
   }
   @media screen and (max-width: 1500px) {
     .footer {
@@ -76,6 +79,9 @@ const FooterWrapper = styled.div`
     }
     .footer__text {
       font-size: 14px !important;
+    }
+    .number__mobile {
+      display: block !important;
     }
   }
 `;

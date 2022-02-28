@@ -22,6 +22,11 @@ const GlobalStyle = createGlobalStyle`
     ul{
         list-style: none
     }
+
+    .my__container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
     
 `;
 export default GlobalStyle;

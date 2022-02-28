@@ -169,7 +169,7 @@ const Home = () => {
           <Header />
 
           {/* home__info */}
-          <div className="padding__my">
+          <div className="padding__my my__container">
             <div>
               <div className="row justify-content-center w-100">
                 <div className="col-md-6">
@@ -180,14 +180,11 @@ const Home = () => {
                   </Slide>
                 </div>
                 <div className="col-md-6">
-                  <h4 className="home__title">
-                    OUR PLANES, <br /> YOUR DESTINATIONS
-                  </h4>
-                  {/* <Slide direction={"up"} cascade={false}>
+                  <Slide direction={"up"} cascade={false}>
                     <h4 className="home__title">
-                      OUR PLANES, YOUR DESTINATIONS
+                      OUR PLANES, <br /> YOUR DESTINATIONS
                     </h4>
-                  </Slide> */}
+                  </Slide>
                 </div>
                 <Fade direction="up">
                   <div
@@ -258,7 +255,7 @@ const Home = () => {
         </div>
 
         {/* services */}
-        <div className="services__section padding__my">
+        <div className="services__section padding__my my__container">
           <div className="row w-100">
             <div className="col-12 col-md-7">
               <div className="services__text">
@@ -329,7 +326,7 @@ const Home = () => {
         </div>
 
         {/* swiper__section */}
-        <div className="swiper__section ">
+        <div className="swiper__section my__container">
           <div className="padding__my">
             <Slide direction="up" duration={1000}>
               <p className="mb-0 section__title">Buy at competitive prices</p>
@@ -411,7 +408,7 @@ const Home = () => {
         </div>
 
         {/* buy__prices */}
-        <div className="buy__prices padding__my">
+        <div className="buy__prices padding__my my__container">
           <div>
             <Slide direction="up" duration={1000}>
               <p className="mb-0 section__title">Buy at competitive prices</p>
@@ -449,7 +446,7 @@ const Home = () => {
         </div>
 
         {/* Gallery */}
-        <div className="big__gallery">
+        <div className="big__gallery my__container">
           <Slide direction="up" duration={1000}>
             <p className="mb-0 mt-5 section__title">Gallery</p>
           </Slide>
@@ -470,7 +467,7 @@ const Home = () => {
         </div>
 
         {/* Contact_us */}
-        <div className="contact__section position-relative padding__my mb-5">
+        <div className="contact__section position-relative padding__my mb-5 my__container">
           <Fade direction="up" duration={1000}>
             <p className="mb-0 section__title">Contact us</p>
           </Fade>

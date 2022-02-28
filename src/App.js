@@ -1,8 +1,8 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Container from './Containers';
-import About from './Pages/About';
-import Home from './Pages/Home';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Container from "./Containers";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
 
 function App() {
   return (

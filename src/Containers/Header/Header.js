@@ -5,6 +5,8 @@ import MyButton from "../../UI/Button/MyButton";
 import { Fade } from "react-awesome-reveal";
 import flykhiva__logo from "../../img/flykhiva__logo.svg";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const headersData = [
   { class: "one", duration: 300, to: "/", text: "Home" },
@@ -57,9 +59,11 @@ const Header = () => {
                 Book now
               </MyButton>
             </div>
-            <b onClick={() => setBars(!bars)} className="fs-4 ms-4 bars">
-              open
-            </b>
+            <FontAwesomeIcon
+              className="bars fs-3 ms-3"
+              onClick={() => setBars(!bars)}
+              icon={faBars}
+            />
           </div>
 
           <div className={`mediaLeft__content ${bars ? "active" : ""}`}>
@@ -91,7 +95,7 @@ const Header = () => {
               })}
 
             <div onClick={() => setBars(!bars)} className="close">
-              X
+              <FontAwesomeIcon className="fs-3" icon={faTimes} />
             </div>
           </div>
         </div>

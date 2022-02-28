@@ -225,7 +225,7 @@ const HomeWrapper = styled.div`
 
   /* gallery__styles */
   .big__gallery {
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     padding: 0 185px;
 
@@ -955,7 +955,7 @@ const HomeWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     .padding__my {
       padding: 150px 0px 0 20px !important;
     }
@@ -1016,9 +1016,71 @@ const HomeWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 380px) {
     .padding__my {
       padding: 150px 0px 0 20px !important;
+    }
+    .home__title {
+      position: relative;
+      top: -240px;
+      left: 25px !important;
+      font-size: 26px !important;
+    }
+    .home__air {
+      width: 350px;
+      position: relative;
+      top: 20px;
+      left: 10px;
+    }
+    .home__big__box {
+      width: 350px;
+      margin-top: 100px !important;
+      .home__box {
+        height: 42px !important;
+      }
+      .button {
+        width: 90px !important;
+        height: 42px !important;
+        font-size: 14px !important;
+      }
+      .six,
+      .five,
+      .four,
+      .three {
+        display: none !important;
+      }
+    }
+    .ps__box {
+      transform: translateX(-2%) !important;
+      width: 350px !important;
+      height: 400px !important;
+      padding: 0 20px !important;
+      .ps__box__title {
+        font-size: 30px !important;
+        line-height: 120% !important;
+        margin-bottom: 20px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 12px !important;
+      }
+    }
+    .my_swiper {
+      padding-left: 20px !important;
+    }
+    .big__gallery {
+      height: 350px;
+      padding: 0 20px !important;
+    }
+    .login__btn,
+    .my__input {
+      width: 250px !important;
+      height: 40px !important;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .padding__my {
+      padding: 150px 0px 0 13px !important;
     }
     .home__title {
       position: relative;
@@ -1069,6 +1131,22 @@ const HomeWrapper = styled.div`
       }
       .ps__box__subtitle {
         font-size: 12px !important;
+      }
+    }
+    .login__btn,
+    .my__input {
+      width: 250px !important;
+      height: 40px !important;
+    }
+    .login {
+      width: 300px !important;
+      height: 600px !important;
+      background-position: 50%, 100% !important;
+
+      .eye {
+        position: absolute;
+        top: 44%;
+        right: 15%;
       }
     }
   }

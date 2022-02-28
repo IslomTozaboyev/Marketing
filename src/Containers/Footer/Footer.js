@@ -81,10 +81,10 @@ const Footer = () => {
                   </div>
                 </Slide>
               </div>
-              <div>
+              <div className="number__mobile">
                 <div className="mb-0 mt-4 ms-1 d-flex align-items-center">
                   <img src={footer__icon2} alt="footer__icon" />
-                  <p className="number__mobile footer__text mb-0 ms-2 me-5">
+                  <p className="footer__text mb-0 ms-2 me-5">
                     +998 90 000 00 00
                   </p>
                 </div>
