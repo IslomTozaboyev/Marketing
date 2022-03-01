@@ -340,6 +340,14 @@ const HomeWrapper = styled.div`
     }
   }
 
+  @media screen and (max-width: 1920px) {
+    .login {
+      position: relative;
+      top: 0;
+      left: 300px;
+    }
+  }
+
   @media screen and (max-width: 1700px) {
     .home__title {
       font-size: 60px !important;
@@ -371,6 +379,18 @@ const HomeWrapper = styled.div`
     }
     .big__gallery {
       padding: 0px 100px 0 150px !important;
+    }
+
+    .login__photos {
+      .contact__img1 {
+        width: 750px;
+        height: 650px;
+      }
+      .contact__img2 {
+        position: relative;
+        left: 50px;
+        width: 800px;
+      }
     }
   }
   @media screen and (max-width: 1500px) {
@@ -406,6 +426,26 @@ const HomeWrapper = styled.div`
     .big__gallery {
       padding: 0px 80px 0 100px !important;
     }
+
+    .login {
+      position: relative;
+      top: 0;
+      left: 150px;
+    }
+    .login__photos {
+      .contact__img1 {
+        position: relative;
+        top: 100px;
+        width: 650px;
+        height: 550px;
+      }
+      .contact__img2 {
+        position: relative;
+        top: -350px;
+        left: 0px;
+        width: 750px;
+      }
+    }
   }
 
   @media screen and (max-width: 1400px) {
@@ -427,22 +467,7 @@ const HomeWrapper = styled.div`
       left: 30px;
       width: 400px;
     }
-    .login__photos {
-      margin: 0 auto;
-      .contact__img1 {
-        margin: 0 auto;
-        width: 640px;
-        height: 650px;
-      }
-      .contact__img2 {
-        left: -120px;
-        width: 850px;
-        height: 380px;
-        object-fit: contain;
-      }
-    }
     .login {
-      margin: 0 auto;
       margin-top: 50px;
     }
   }
@@ -492,25 +517,33 @@ const HomeWrapper = styled.div`
       padding: 0px 70px 0 130px !important;
     }
   }
+
   @media screen and (max-width: 1200px) {
-    .login__photos {
-      margin: 0 auto;
-      padding-left: 170px;
-      .contact__img1 {
-        margin: 0 auto;
-        width: 600px;
-        height: 620px;
-      }
-      .contact__img2 {
-        left: -200px;
-        width: 800px;
-        height: 360px;
-        object-fit: contain;
+    .login {
+      position: relative;
+      top: 0;
+      left: 150px;
+      width: 400px !important;
+      background-position: 50%, 100% !important;
+
+      .my__input,
+      .login__btn {
+        width: 300px;
       }
     }
-    .login {
-      margin: 0 auto;
-      margin-top: 50px;
+    .login__photos {
+      .contact__img1 {
+        position: relative;
+        top: 100px;
+        width: 500px;
+        height: 500px;
+      }
+      .contact__img2 {
+        position: relative;
+        top: -300px;
+        left: -50px;
+        width: 650px;
+      }
     }
   }
   @media screen and (max-width: 1100px) {
@@ -607,6 +640,14 @@ const HomeWrapper = styled.div`
     }
     .big__gallery {
       padding: 0px 40px 0 60px !important;
+    }
+    .login {
+      width: 517px !important;
+      height: 647px !important;
+      .eye {
+        right: 120px !important;
+        object-fit: cover;
+      }
     }
     .login__photos {
       display: none;
@@ -800,6 +841,12 @@ const HomeWrapper = styled.div`
         font-size: 14px !important;
       }
     }
+
+    .login {
+      width: 517px !important;
+      height: 647px !important;
+      transform: translate(-20%, 0) !important;
+    }
   }
 
   @media screen and (max-width: 650px) {
@@ -863,6 +910,11 @@ const HomeWrapper = styled.div`
     .big__gallery {
       height: 350px;
     }
+    .login {
+      width: 517px !important;
+      height: 647px !important;
+      transform: translate(-30%, 0) !important;
+    }
   }
 
   @media screen and (max-width: 500px) {
@@ -903,11 +955,12 @@ const HomeWrapper = styled.div`
     .login {
       height: 600px !important;
       background-position: 50%, 100% !important;
+      transform: translate(-35%, 0) !important;
 
       .eye {
         position: absolute;
         top: 44%;
-        right: 15%;
+        right: 20% !important;
       }
     }
   }
@@ -1037,11 +1090,12 @@ const HomeWrapper = styled.div`
     }
     .login__btn,
     .my__input {
-      width: 250px !important;
+      width: 200px !important;
       height: 40px !important;
     }
     .login {
       width: 350px !important;
+      transform: translate(-40%, 0) !important;
     }
   }
 
@@ -1223,6 +1277,7 @@ const HomeWrapper = styled.div`
       width: 300px !important;
       height: 600px !important;
       background-position: 50%, 100% !important;
+      transform: translate(-45%, 0) !important;
 
       .eye {
         position: absolute;
@@ -1298,6 +1353,7 @@ const HomeWrapper = styled.div`
     .login {
       width: 300px !important;
       height: 600px !important;
+      transform: translate(-50%, 0) !important;
       background-position: 50%, 100% !important;
 
       .eye {

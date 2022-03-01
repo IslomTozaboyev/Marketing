@@ -157,6 +157,7 @@ const buy__pricesData = [
 
 const Home = () => {
   const [eye, setEye] = useState(false);
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     AOS.init();
@@ -493,7 +494,7 @@ const Home = () => {
             <p className="mb-0 section__title">Contact us</p>
           </Fade>
           <div className="row w-100 m-0">
-            <div className="col-12 col-md-12 col-lg-12 col-xl-7 position-relative login__photos">
+            <div className="col-5 login__photos">
               <img
                 className="contact__img1"
                 src={contact__img1}
@@ -510,6 +511,7 @@ const Home = () => {
             </div>
 
             <form
+              className="col-7 login d-flex flex-column"
               id="form"
               data-aos-duration={1000}
               data-aos="fade-right"
@@ -517,7 +519,6 @@ const Home = () => {
                 backgroundImage: `url(${login__img})`,
                 backgroundSize: "cover",
               }}
-              className="col-12 col-md-12 col-lg-12 col-xl-5 login d-flex flex-column"
             >
               <p className="mb-0 login__title text-center">Log in</p>
 
