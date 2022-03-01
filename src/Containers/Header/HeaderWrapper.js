@@ -181,7 +181,22 @@ const HeaderWrapper = styled.div`
   }
   @media screen and (max-width: 400px) {
     .mediaLeft__content {
-      height: 9vh !important;
+      height: 11vh !important;
+    }
+    .mediaLeft__content__logo {
+      width: 160px !important;
+      height: 35px !important;
+    }
+    .mediaLeft__content__link {
+      font-size: 16px !important;
+    }
+    .four {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .mediaLeft__content {
+      height: 14vh !important;
     }
     .mediaLeft__content__logo {
       width: 160px !important;

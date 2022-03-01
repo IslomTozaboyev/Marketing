@@ -33,7 +33,7 @@ const FooterWrapper = styled.div`
   }
   @media screen and (max-width: 1500px) {
     .footer {
-      padding: 65px 0 0 100px !important;
+      padding: 65px 0 65px 100px !important;
     }
     .flykhiva__logo {
       margin-right: 80px;

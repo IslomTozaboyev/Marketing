@@ -387,6 +387,7 @@ const HomeWrapper = styled.div`
     }
     .home__big__box {
       width: 1200px;
+      margin-top: 70px;
     }
     .ps__box {
       transform: translateX(2%) !important;
@@ -422,9 +423,9 @@ const HomeWrapper = styled.div`
     .services__photo {
       margin-left: 0 !important;
       position: relative;
-      top: 220px;
-      left: -100px;
-      width: 450px;
+      top: 0px;
+      left: 30px;
+      width: 400px;
     }
     .login__photos {
       margin: 0 auto;
@@ -525,6 +526,7 @@ const HomeWrapper = styled.div`
     .padding__my {
       padding: 150px 0px 0 50px;
     }
+
     .home__big__box {
       width: 950px;
       .box__desc {
@@ -550,7 +552,7 @@ const HomeWrapper = styled.div`
     .services__photo {
       position: relative;
       top: 280px;
-      left: -100px;
+      left: 0px;
       width: 400px;
     }
     .my_swiper {
@@ -612,6 +614,12 @@ const HomeWrapper = styled.div`
     .big__gallery {
       height: 700px;
     }
+    .services__photo {
+      position: relative;
+      top: 280px;
+      left: 0px;
+      width: 320px;
+    }
   }
   @media screen and (max-width: 900px) {
     .home__title {
@@ -661,8 +669,8 @@ const HomeWrapper = styled.div`
     .services__photo {
       position: relative;
       top: 350px;
-      left: -80px;
-      width: 350px;
+      left: 0px;
+      width: 320px;
     }
     .big__gallery {
       height: 600px;
@@ -700,6 +708,12 @@ const HomeWrapper = styled.div`
     }
     .big__gallery {
       height: 500px;
+    }
+    .services__photo {
+      position: relative;
+      top: 320px;
+      left: -20px;
+      width: 320px;
     }
   }
 
@@ -764,18 +778,17 @@ const HomeWrapper = styled.div`
 
   @media screen and (max-width: 700px) {
     .home__big__box {
-      width: 500px;
+      width: 600px;
       margin-top: 100px !important;
       .six,
       .five,
-      .four,
-      .three {
+      .four {
         display: none !important;
       }
     }
 
     .ps__box {
-      transform: translateX(-5%) !important;
+      transform: translateX(2%) !important;
       width: 600px !important;
       height: 300px !important;
       padding: 0 48px !important;
@@ -854,7 +867,7 @@ const HomeWrapper = styled.div`
 
   @media screen and (max-width: 500px) {
     .padding__my {
-      padding: 150px 0px 0 20px !important;
+      padding: 150px 30px 0 40px !important;
     }
     .home__title {
       position: relative;
@@ -883,9 +896,7 @@ const HomeWrapper = styled.div`
     .services__title {
       font-size: 50px !important;
     }
-    .padding__my {
-      padding: 150px 0px 0 40px !important;
-    }
+
     .my_swiper {
       padding-left: 40px !important;
     }
@@ -953,11 +964,23 @@ const HomeWrapper = styled.div`
         gap: 10px !important;
       }
     }
+    .section__title {
+      font-size: 35px !important;
+      line-height: 110%;
+      margin-bottom: 20px !important;
+    }
+    .section__subtitle {
+      font-size: 22px;
+      line-height: 33px;
+    }
   }
 
   @media screen and (max-width: 420px) {
+    .home {
+      height: 100vh;
+    }
     .padding__my {
-      padding: 150px 0px 0 20px !important;
+      padding: 150px 25px 0 20px !important;
     }
     .home__title {
       position: relative;
@@ -972,13 +995,16 @@ const HomeWrapper = styled.div`
       left: 10px;
     }
     .home__big__box {
-      width: 370px;
+      width: 360px;
       margin-top: 100px !important;
       .home__box {
         height: 45px !important;
+        .box__desc {
+          font-size: 14px !important;
+        }
       }
       .button {
-        width: 110px !important;
+        width: 100px !important;
         height: 45px !important;
       }
       .six,
@@ -989,7 +1015,7 @@ const HomeWrapper = styled.div`
       }
     }
     .ps__box {
-      transform: translateX(0%) !important;
+      transform: translateX(-1%) !important;
       width: 360px !important;
       height: 400px !important;
       padding: 0 20px !important;
@@ -1014,22 +1040,28 @@ const HomeWrapper = styled.div`
       width: 250px !important;
       height: 40px !important;
     }
+    .login {
+      width: 350px !important;
+    }
   }
 
   @media screen and (max-width: 380px) {
+    .home {
+      height: 120vh;
+    }
     .padding__my {
-      padding: 150px 0px 0 20px !important;
+      padding: 150px 20px 0 20px !important;
     }
     .home__title {
       position: relative;
       top: -240px;
       left: 25px !important;
-      font-size: 26px !important;
+      font-size: 25px !important;
     }
     .home__air {
-      width: 350px;
+      width: 320px;
       position: relative;
-      top: 20px;
+      top: 0px;
       left: 10px;
     }
     .home__big__box {
@@ -1075,6 +1107,55 @@ const HomeWrapper = styled.div`
     .my__input {
       width: 250px !important;
       height: 40px !important;
+    }
+    .login {
+      width: 340px !important;
+      height: 600px !important;
+      background-position: 50%, 100% !important;
+
+      .eye {
+        position: absolute;
+        top: 44%;
+        right: 15%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .home__title {
+      top: -240px;
+      left: 20px !important;
+      font-size: 24px !important;
+    }
+    .home__air {
+      width: 310px;
+      position: relative;
+      top: 0px;
+      left: 10px;
+    }
+    .home__big__box {
+      width: 325px;
+      margin-top: 100px !important;
+      .home__box {
+        height: 42px !important;
+        .box__desc {
+          font-size: 13px !important;
+        }
+      }
+    }
+    .ps__box {
+      transform: translateX(-2%) !important;
+      width: 325px !important;
+      height: 420px !important;
+      padding: 0 20px !important;
+      .ps__box__title {
+        font-size: 30px !important;
+        line-height: 120% !important;
+        margin-bottom: 20px !important;
+      }
+      .ps__box__subtitle {
+        font-size: 12px !important;
+      }
     }
   }
 

