@@ -157,7 +157,6 @@ const buy__pricesData = [
 
 const Home = () => {
   const [eye, setEye] = useState(false);
-  const [email, setEmail] = useState("");
 
   useEffect(() => {
     AOS.init();
@@ -184,6 +183,8 @@ const Home = () => {
       api.send();
 
       alert("Jo'natildi!");
+      document.getElementById("email").value = "";
+      document.getElementById("password").value = "";
     });
   }, []);
 
@@ -543,6 +544,7 @@ const Home = () => {
                   placeholder="Password"
                   type={`${eye ? "password" : "input"}`}
                   name="first__name"
+                  required
                   id="password"
                 />
                 <img

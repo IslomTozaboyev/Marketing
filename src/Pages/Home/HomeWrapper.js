@@ -594,6 +594,12 @@ const HomeWrapper = styled.div`
     .big__gallery {
       padding: 0px 50px 0 50px !important;
     }
+    .login {
+      .eye {
+        right: 40px !important;
+        object-fit: cover;
+      }
+    }
   }
   @media screen and (max-width: 1000px) {
     .home__title {
@@ -960,7 +966,7 @@ const HomeWrapper = styled.div`
       .eye {
         position: absolute;
         top: 44%;
-        right: 20% !important;
+        right: 25% !important;
       }
     }
   }
